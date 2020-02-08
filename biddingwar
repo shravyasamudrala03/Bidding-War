@@ -1,1 +1,15 @@
+import Card.py
+def main():
+    """ todo:Clear the screen """
+    print("Welcome to bidding war")
+    print("Press 1 to start a game!")
+    print("Press 2 to exit")
+    prompt = input ("">>"")
+    while(prompt):
+        if prompt == 1:
+            start_game()
+        elif prompt == 2:
+            exit()
+        else:
+             start_game()
 
