@@ -29,4 +29,16 @@ def check_sum(guess1,guess2):
     elif(guess1 == sum and guess2 == sum):
         bidding_war()
    
+def bidding_war(deck1,deck2):
+    show_card(deck1,deck2)
+    guess1 = Sum.inp()
+    guess2 = Sum.inp()
+    check_sum(guess1,guess2)
+    actual_sum(deck1)
+    bid = guess1
+    '''Assuming player1 calls'''
+    if(sum < bid):
+        print('Player 1 wins')    
+    if(sum > bid):
+        print('Player 2 wins')
 	
