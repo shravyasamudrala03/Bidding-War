@@ -18,4 +18,8 @@ class Sum():
         self.guess = guess
     def inp(self,guess):
         self.guess = int(input("enter the sum value guesssed"))
+def check_sum(guess1,guess2):
+    if (guess2 == guess1 or guess2 == guess1+1 or guess2 == guess1-1):
+        print("Error! Player 2 guess again")
+        guess2 = int(input("enter the sum value guesssed player2: "))
 
