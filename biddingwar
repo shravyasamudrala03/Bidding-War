@@ -22,4 +22,11 @@ def check_sum(guess1,guess2):
     if (guess2 == guess1 or guess2 == guess1+1 or guess2 == guess1-1):
         print("Error! Player 2 guess again")
         guess2 = int(input("enter the sum value guesssed player2: "))
-
+    elif(guess1 == sum):
+        Deck.movecard(player1,2)
+    elif(guess2 ==sum):
+        Deck.movecard(player2,2)
+    elif(guess1 == sum and guess2 == sum):
+        bidding_war()
+   
+	
