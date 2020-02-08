@@ -52,3 +52,16 @@ def give_card(somecard,count):
     dec = Deck.move_cards(somecard,count)
     return dec	
 
+def actual_sum(deck1):
+    card1 = deck1[0]+deck1[1]
+    return card1   
+    
+def start_game():
+    deck = Card.Deck()
+    deck.shuffle()
+    player1 = Card.Hand()
+    player2 = Card.Hand()
+    deck1 = give_card(player1,26)
+    deck2 = give_card(player2,26)
+    bidding_war(deck1,deck2)
+
