@@ -13,3 +13,9 @@ def main():
         else:
              start_game()
 
+class Sum():
+    def init(self, guess):
+        self.guess = guess
+    def inp(self,guess):
+        self.guess = int(input("enter the sum value guesssed"))
+
