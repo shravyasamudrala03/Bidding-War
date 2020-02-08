@@ -30,6 +30,7 @@ def check_sum(guess1,guess2):
         bidding_war()
    
 def bidding_war(deck1,deck2):
+    show_card(deck1,deck2)
     guess1 = Sum.inp()
     guess2 = Sum.inp()
     check_sum(guess1,guess2)
@@ -45,4 +46,9 @@ def show_card(deck1,deck2):
     card1 = deck1[0]
     card2 = deck2[0]
     print(card1,card2)
+
+def give_card(somecard,count):
+    dec = []
+    dec = Deck.move_cards(somecard,count)
+    return dec	
 
